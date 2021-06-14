@@ -1,36 +1,56 @@
 /* Basuc styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap");
 
 * {
   margin: 0;
- font-family: 'Mulish', sans-serif;
-  color: #333;
+  font-family: "Mulish", sans-serif;
 }
 
+body {
+  background: url("./img/teamwinner.jpg") no-repeat center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.748);
+  background-blend-mode: overlay;
+  color: rgba(255, 255, 255, 0.885);
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
 .navbar {
-  padding: 20px;
   display: flex;
   align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
   /* justify-content: center; */
-  max-width: 100%;
+  min-width: 100%;
+  padding: 17px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
-  background-color: #fafafa;
+  background-color: #e9c2cedc;
+  z-index: 1;
 }
 
 .navbar h3 {
-  color: #f1356d;
+  color: #f8f8f8;
+  margin-left: 2rem;
   /* font-style: italic; */
 }
 .navbar .links {
   margin-left: auto;
+  margin-right: 4rem;
 }
 
 .navbar a {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #fffcfd;
 }
 
 .navbar a:hover {
@@ -39,7 +59,7 @@
 
 .content {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 7rem auto;
   padding: 20px;
 }
 
@@ -47,17 +67,17 @@
 .blog-preview {
   padding: 10px 16px;
   margin: 25px 0;
-  border-bottom: 1px solid #f0ecec;
+  border-bottom: 1px solid #f0ecec90;
   position: relative;
 }
 
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 0px 7px rgba(186, 186, 186, 0.85);
 }
 
 .blog-preview h2 {
   font-size: 24px;
-  color: #f1356d;
+  color: #e9c2ce;
   margin-bottom: 8px;
 }
 
@@ -84,14 +104,14 @@
 .pt {
   position: absolute;
   left: 80%;
-  top: 8%;
+  top: 17%;
 }
 
 /* blog detials page */
 
 .blog-details h2 {
-  font-size: 20px;
-  color: #f1356d;
+  font-size: 26px;
+  color: #e9c2ce;
   margin-bottom: 10px;
 }
 
@@ -130,6 +150,41 @@
   box-sizing: border-box;
   display: block;
 }
+
+/*=========FOOTER============== */
+
+/* you can space two items using flexbox by using margin: 0 auto on the parent element and on one of the child element, set margin-left: auto */
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 auto; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(130, 130, 130, 0.844);
+  padding: 18px;
+  color: #e9c2ce;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* .footer .links {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 2rem;
+  margin-left: auto;
+}
+.footer .links a {
+  text-decoration: none;
+  color: #e9c2ce;
+}
+.footer h4 {
+  margin-left: 2rem;
+} */
 
 /* .create button{
   background: #f1356d;
@@ -220,19 +275,16 @@ span {
   color: #1b1464;
 }
 
-
-@media (max-width:490px){
-  .card{
-    display:flex;
+@media (max-width: 490px) {
+  .card {
+    display: flex;
     flex-direction: column;
     /* justify-content: center; */
-    align-items:center;
+    align-items: center;
   }
 
   .server {
-  width: 60%;
-  margin-bottom: 2rem;
-  
+    width: 60%;
+    margin-bottom: 2rem;
+  }
 }
-}
-
